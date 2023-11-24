@@ -1,144 +1,127 @@
 <!DOCTYPE html>
-<html lang="nb">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">        
         <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">  
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <title>MyCompany - Products</title>
+        <link href="font/css/fontawesome.css" rel="stylesheet">
+        <link href="font/css/brands.css" rel="stylesheet">
+        <link href="font/css/solid.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>MyCompany - main</title>
     </head>
     <body>
-        <div id="gridContainer">
+        
             <header>
                 <nav>
-                    <a href="index.html"><img id="logo" src="logo.jpg" alt="placeholder bilde for logo"></a>
-                    <!--<a href="https://www.vecteezy.com/free-vector/logo">Logo Vectors by Vecteezy</a>-->
-                    <ul>
-                        <li><a href="#">Menypunkt</a></li>
-                        <li><a href="#">Menypunkt</a></li>
-                        <li><a href="#">Menypunkt</a></li>
-                        <li><a href="#">Menypunkt</a></li>
+                    
+                    <a href="index.html"><img id="logo" src="img/logo1.png" alt="MyCompany logo"></a>
+                    
+                    <ul class="menu">
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="products.html" id="current_page">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="about.html" class="golden-button">Contact</a></li>                        
                     </ul>
+                    
                 </nav>
             </header>
-            <!--Seksjon med featured items starter her-->
-            <section class="featured-items">
-                <h2>Våre favoritter</h2>
-                <article>
-                    <img src="img/medium-placeholder.png" alt="placeholder for produktbilde">
-                    <ul>
-                        <li>Produkt navn</li>
-                        <li>Merke navn</li>
-                        <li>Pris</li>
-                    </ul>
-                    <a href="#" class="product-button">Se produkt</a>
-                </article>
-                <article>
-                    <img src="img/medium-placeholder.png" alt="placeholder for produktbilde">
-                    <ul>
-                        <li>Produkt navn</li>
-                        <li>Merke navn</li>
-                        <li>Pris</li>
-                    </ul>
-                    <a href="#" class="product-button">Se produkt</a>
-                </article>
-                <article>
-                    <img src="img/medium-placeholder.png" alt="placeholder for produktbilde">
-                    <ul>
-                        <li>Produkt navn</li>
-                        <li>Merke navn</li>
-                        <li>Pris</li>
-                    </ul>
-                    <a href="#" class="product-button">Se produkt</a>
-                </article>
-                <article>
-                    <img src="img/medium-placeholder.png" alt="placeholder for produktbilde">
-                    <ul>
-                        <li>Produkt navn</li>
-                        <li>Merke navn</li>
-                        <li>Pris</li>
-                    </ul>
-                    <a href="#" class="product-button">Se produkt</a>
-                </article>
-                <article>
-                    <img src="img/medium-placeholder.png" alt="placeholder for produktbilde">
-                    <ul>
-                        <li>Produkt navn</li>
-                        <li>Merke navn</li>
-                        <li>Pris</li>
-                    </ul>
-                    <a href="#" class="product-button">Se produkt</a>
-                </article>
-                <article>
-                    <img src="img/medium-placeholder.png" alt="placeholder for produktbilde">
-                    <ul>
-                        <li>Produkt navn</li>
-                        <li>Merke navn</li>
-                        <li>Pris</li>
-                    </ul>
-                    <a href="#" class="product-button">Se produkt</a>
-                </article>
-            </section>
-            <!--Seksjoner med featured items slutter her-->
-            <!--Hovedinnhold med produkter starter her-->
+        
             <main>
-                <article>
-                    <img src="img/large-placeholder.png" alt="placeholder for produktbilde">
-                    <ul>
-                        <li>Produkt navn</li>
-                        <li>Merke navn</li>
-                        <li>Pris</li>
-                    </ul>
-                    <a href="#" class="product-button">Se produkt</a>
-                </article>
-                <article>
-                    <img src="img/large-placeholder.png" alt="placeholder for produktbilde">
-                    <ul>
-                        <li>Produkt navn</li>
-                        <li>Merke navn</li>
-                        <li>Pris</li>
-                    </ul>
-                    <a href="#" class="product-button">Se produkt</a>
-                </article>
-                <article>
-                    <img src="img/large-placeholder.png" alt="placeholder for produktbilde">
-                    <ul>
-                        <li>Produkt navn</li>
-                        <li>Merke navn</li>
-                        <li>Pris</li>
-                    </ul>
-                    <a href="#" class="product-button">Se produkt</a>
-                </article>
-                <article>
-                    <img src="img/large-placeholder.png" alt="placeholder for produktbilde">
-                    <ul>
-                        <li>Produkt navn</li>
-                        <li>Merke navn</li>
-                        <li>Pris</li>
-                    </ul>
-                    <a href="#" class="product-button">Se produkt</a>
-                </article>
-                <article>
-                    <img src="img/large-placeholder.png" alt="placeholder for produktbilde">
-                    <ul>
-                        <li>Produkt navn</li>
-                        <li>Merke navn</li>
-                        <li>Pris</li>
-                    </ul>
-                    <a href="#" class="product-button">Se produkt</a>
-                </article>
-                <article>
-                    <img src="img/large-placeholder.png" alt="placeholder for produktbilde">
-                    <ul>
-                        <li>Produkt navn</li>
-                        <li>Merke navn</li>
-                        <li>Pris</li>
-                    </ul>
-                    <a href="#" class="product-button">Se produkt</a>
-                </article>
+                <section id="main_article">
+                    <h1>Compeling headline</h1>
+                    
+                        
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <p>
+                            <a href="about.html" class="golden-button">Read more about our services</a>
+                        </p>
+                    
+                </section>
+                <section id="regular_article">
+                    <h2>Engaging subheading. What can you help your visitors with</h2>
+                    
+                        <p>
+                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    
+                </section>
+                <section id="about_us">
+                    
+                        <img src="https://placehold.co/200x200/png?text=Picture+of+saleschart" alt="Image of a saleschart showing benefits from our services">
+                        <h2>About our company</h2>
+                        <p>                            
+                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p>                            
+                            <a href="about.html" class="transparent-button">Read more about us</a>
+                       </p>
+
+                   
+                </section>
+                <section id="services">
+                    
+                        <h2>Our services</h2>
+                        <article>
+                            <h3>Branding</h3>
+                            <p>
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                           </p>
+
+                        </article>
+
+                        <article>
+                            <h3>Design</h3>
+                            <p>
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                           </p>
+                        </article>
+
+                        <article>
+                            <h3>Development</h3>
+                            <p>
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                           </p>
+                        </article>
+                    
+                        <article>
+                            <h3>Support</h3>
+                            <p>
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                           </p>
+                        </article>
+                        
+                    
+                </section>
+                <section id="newsletter">
+                    
+                        <h2>Sign up for our newsletter</h2>
+                        
+                            <form method="post" action="#">
+                                <input type="email" name="email" id="email" required>
+                                <input type="submit"  class="golden-button" value="Logg inn">
+                               
+                            </form>
+                           
+                        
+                    
+                </section>
             </main>
-            <!--Hovedinnhold med produkter slutter her-->
-            <footer><p>copyright webutvikling 2022</p></footer>
-        </div>
+
+            <footer>
+                <a href="index.html"><img id="footer_logo" src="img/logo1.png" alt="MyCompany logo"></a>
+                <span>
+                    Copyright MyCompany 2023
+                </span>
+
+                <ul class="some-icons">
+                    <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a></li>
+                    <li><a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a></li>
+                </ul>
+            </footer>
+       
     </body>
 </html>

@@ -11,7 +11,7 @@ html {
 /* Bruker Arial, Helvetica, sans-serif som standardfont for hele nettsiden og nullstiller margen til 0. */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+    margin: 15px;
     background-color: #fff;
 }
 
@@ -56,6 +56,98 @@ nav ul li a {
     margin: 0;
 }
 
+#main_article{
+    width: 100%;
+    background-color: lightgrey;
+    padding: 20px 20px;
+}
+
+#main_article h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+#main_article p{
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+#regular_article{
+    width: 100%;
+    padding: 20px 20px;
+}
+
+#regular_article h2{
+    text-align: center;
+    font-size: 1rem;
+}
+
+#regular_article p{
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+#about_us{
+    width: 100%;
+    padding: 20px 20px;
+    border: solid;
+    border-width: 1px;       
+}
+
+#about_us h2{
+    text-align: left;
+    font-size: 1rem;
+}
+
+#about_us p{
+    text-align: left;
+    font-size: 0.7rem;
+}
+
+#about_us img{
+    float: left;
+    margin: 0px 20px 20px 0px;
+}
+
+#services {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#services h2 {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#services article {
+    flex-basis: 25%;
+    text-align: center;
+    padding: 15px;
+}
+
+#services article h3 {
+    font-size: 0.7rem;
+}
+#services article p {
+    font-size: 0.7rem;
+}
+
+#newsletter {
+    width: 100%;
+    background-color: lightgrey;
+}
+
+#newsletter h2 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+
+
 
 footer {
     display: flex;
@@ -69,7 +161,7 @@ footer {
 }
 
 footer ul li {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .some-icons {
@@ -97,5 +189,15 @@ footer ul li {
     display: inline-block;
     padding: 1rem;
     text-decoration: none;
+    margin: 0.5rem;
+}
+
+.transparent-button{
+    color: black;
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    border-width: 2px;
+    border-style: solid;
     margin: 0.5rem;
 }
