@@ -28,85 +28,110 @@
             </header>
         
             <main>
-                <section id="main_article">
-                    <h1>Compeling headline</h1>
-                    
-                        
+                <section class="standard_section" id="about_company">
+                    <div id="intro_box">
+                        <h2>Compeling headline</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
                         <p>
-                            <a href="about.html" class="golden-button">Read more about our services</a>
+                            <a href="#services" class="golden-button">Get in touch with us</a>
                         </p>
-                    
+                    </div>
                 </section>
-                <section id="regular_article">
-                    <h2>Engaging subheading. What can you help your visitors with</h2>
+                <section  class="standard_section" id="services">
                     
+                    <h2>Our services</h2>
+                    <article>
+                        <i class="fa-solid fa-users"></i>
+                        <h3>Branding</h3>
                         <p>
-                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    
-                </section>
-                <section id="about_us">
-                    
-                        <img src="https://placehold.co/200x200/png?text=Picture+of+saleschart" alt="Image of a saleschart showing benefits from our services">
-                        <h2>About our company</h2>
-                        <p>                            
-                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <p>                            
-                            <a href="about.html" class="transparent-button">Read more about us</a>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
                        </p>
 
+                    </article>
+
+                    <article>
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <h3>Branding</h3>
+                        <p>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                       </p>
+                    </article>
+
+                    <article>
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Branding</h3>
+                        <p>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                       </p>
+                    </article>
+                
+                    <article>
+                        <i class="fa-solid fa-wifi"></i>
+                        <h3>Branding</h3>
+                        <p>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                       </p>
+                    </article>
+                    
+                
+            </section>
+                <section class="standard_section" id="clients">                    
+                         <h2>Some of our clients</h2>
+                        
+                        <div id="logo_group">
+                            <img src="img/logo1.png" alt="Logo for MyCompany">
+                            <img src="img/logo2.png" alt="Logo for second company">
+                            <img src="img/logo3.png" alt="Logo for third company">
+                        </div>                       
+                        
                    
                 </section>
-                <section id="services">
+                <section class="standard_section" id="contact_us_section">
                     
-                        <h2>Our services</h2>
-                        <article>
-                            <h3>Branding</h3>
-                            <p>
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                           </p>
-
-                        </article>
-
-                        <article>
-                            <h3>Design</h3>
-                            <p>
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                           </p>
-                        </article>
-
-                        <article>
-                            <h3>Development</h3>
-                            <p>
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                           </p>
-                        </article>
-                    
-                        <article>
-                            <h3>Support</h3>
-                            <p>
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                           </p>
-                        </article>
-                        
-                    
-                </section>
-                <section id="newsletter">
-                    
-                        <h2>Sign up for our newsletter</h2>
-                        
+                        <h2>Contact us</h2>
+                        <div id="contact_box">
+                        <div id="form_div">
+                            <h4>Send us a message</h4>
                             <form method="post" action="#">
-                                <input type="email" name="email" id="email" required>
-                                <input type="submit"  class="golden-button" value="Logg inn">
+                              
+                                <label for="name">Name</label>
+                                <input type="text" name="name" placeholder="Ola Nordmann" id="name" required>
+                                <label for="subject">Subject</label>
+                                <input type="text" name="subject" placeholder="Subject" id="subject" required>
+                                <label for="message">Message</label>
+
+                                <textarea id="message" name="message" rows="6" cols="25">
+                                At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+                                </textarea> 
+                                <input type="submit" value="Send message">
                                
                             </form>
-                           
-                        
-                    
+                        </div>
+                        <div id="contact_info">
+                            <h4>Contact information</h4>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-droplet"></i> B R A Veien 4, 1757 Halden
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-phone"></i> 69 60 80 00
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-envelope"></i> postmottak@hiof.hio
+                            </p>
+                            
+                        </div>
+                        </div>
+                </section>
+                <section  class="standard_section" id="map">
+                                        
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.2004164391894!2d11.349162656464584!3d59.12904711661365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f6cf4d491d%3A0xdd127f6ec81a545d!2sB%20R%20A%20Veien%204%2C%201783%20Halden!5e0!3m2!1sno!2sno!4v1700865503619!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                       
                 </section>
             </main>
 
@@ -117,9 +142,9 @@
                 </span>
 
                 <ul class="some-icons">
-                    <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a></li>
-                    <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a></li>
-                    <li><a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a></li>
+                    <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
                 </ul>
             </footer>
        

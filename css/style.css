@@ -1,21 +1,16 @@
-/* Nullstiller boksmodellen for alle elementer */
+
 * {
     box-sizing: border-box;
 }
-
-/* Setter grunnfontstørrelsen til å være responsiv basert på visningsvinduets bredde */
 html {
     font-size: calc(1em + 1vw);
 }
-
-/* Bruker Arial, Helvetica, sans-serif som standardfont for hele nettsiden og nullstiller margen til 0. */
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 15px;
     background-color: #fff;
+    max-width: 1600px;
 }
-
-
 
 
 header {
@@ -28,6 +23,11 @@ nav{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -56,52 +56,74 @@ nav ul li a {
     margin: 0;
 }
 
-#main_article{
+.standard_section {
     width: 100%;
+    
+    
+}
+
+.standard_section h1 {
+    font-size: 1.5rem;
+}
+
+.standard_section h2 {
+    font-size: 1rem;
+}
+
+.standard_section h3 {
+    font-size: 0.7rem;
+}
+
+.standard_section h4 {
+    font-size: 0.7rem;
+}
+.standard_section p {
+    font-size: 0.5rem;
+}
+
+.standard_section hr {
+    color: #e6bd43;
+    flex-basis: 100%;
+}
+
+
+#main_article{    
     background-color: lightgrey;
-    padding: 20px 20px;
+    padding: 50px;
+    
 }
 
 #main_article h1{
     text-align: center;
-    font-size: 2rem;
 }
 
 #main_article p{
     text-align: center;
-    font-size: 0.7rem;
 }
 
 #regular_article{
     width: 100%;
-    padding: 20px 20px;
 }
 
 #regular_article h2{
     text-align: center;
-    font-size: 1rem;
 }
 
 #regular_article p{
     text-align: center;
-    font-size: 0.7rem;
 }
 
 #about_us{
-    width: 100%;
-    padding: 20px 20px;
     border: solid;
     border-width: 1px;       
 }
 
 #about_us h2{
     text-align: left;
-    font-size: 1rem;
 }
 
 #about_us p{
     text-align: left;
-    font-size: 0.7rem;
 }
 
 #about_us img{
@@ -110,7 +132,6 @@ nav ul li a {
 }
 
 #services {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -119,7 +140,6 @@ nav ul li a {
 #services h2 {
     flex-basis: 100%;
     text-align: center;
-    font-size: 1rem;
 }
 
 #services article {
@@ -128,25 +148,163 @@ nav ul li a {
     padding: 15px;
 }
 
-#services article h3 {
-    font-size: 0.7rem;
-}
-#services article p {
-    font-size: 0.7rem;
-}
 
 #newsletter {
-    width: 100%;
     background-color: lightgrey;
 }
 
 #newsletter h2 {
-    font-size: 1rem;
     text-align: center;
 }
 
+#about_company{
+    background-image:url("../img/desktop.png");
+    background-size: cover; 
+    padding: 30px 30px 30px 30px;
+    display: flex;
+    justify-content: right;
+    
+}
+
+#intro_box {
+    width: 50%;
+    background-color:rgb(237, 234, 234);
+    opacity: 0.95;
+    justify-content: right;
+    padding: 20px 20px 20px 20px;
+}
+
+#clients {
+    background-color: #e6bb43;
+}
+
+#clients h2 {
+    text-align: center;
+    margin: 30px;
+}
+
+#clients img {
+    margin: 20px;
+}
+
+#logo_group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px;
+}
+#contact_us_section {
+    background-color:rgb(237, 234, 234);
+}
+
+#contact_us_section h2{
+    text-align: center;
+}
+
+#contact_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+#form_div {
+    
+    width: 40%;
+    font-size: 0.5rem;
+}
 
 
+#contact_info {
+    width: 40%;
+}
+
+#map iframe{
+    width: 100%;
+    height: 300px;
+}
+
+#portfolio {
+ 
+    background-image:url("../img/desktop.png");
+    background-size: cover; 
+}
+
+#portfolio_content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background: rgba(187, 187, 187, 0.7);
+}
+
+#explore {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+#explore h2 {
+    flex-basis: 100%;
+}
+
+#explore ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+#explore ul li a {
+    text-decoration: none;
+}
+
+#branding {
+    padding: 30px;
+    
+}
+
+#branding h2 {
+    /*
+    flex-basis: 100%;
+    */
+}
+
+#branding article {
+    
+}
+
+.flexgrow_article {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flexgrow_article article{
+    margin: 15px;
+}
+
+.flex_article {
+    max-width: 692px;
+    min-width: 200px;
+    flex-basis: 250px;
+    flex-grow: 1;
+}
+
+.flex_article img{
+    width: 100%;
+}
+
+#design {
+    padding: 30px;
+}
+
+#development{
+    padding: 30px;
+}
 
 
 footer {
@@ -160,8 +318,10 @@ footer {
     padding: 20px 30px 20px 30px;
 }
 
-footer ul li {
+
+footer ul li i {
     font-size: 1.5rem;
+    color: white;
 }
 
 .some-icons {
@@ -177,27 +337,38 @@ footer ul li {
 .golden-button{
     background-color: #e6bd43;
     color: black;
+    font-weight: bold;
     display: inline-block;
-    padding: 1rem;
-    text-decoration: none;
-    margin: 0.5rem;
+    padding: 0.5rem;
+    text-decoration: none;  
 }
 
 .golden-button:hover {
     background-color: #252525;
     color: #e6bd43;
+    font-weight: bold;
     display: inline-block;
-    padding: 1rem;
-    text-decoration: none;
-    margin: 0.5rem;
+    padding: 0.5rem;
+    text-decoration: none;  
 }
 
 .transparent-button{
     color: black;
+    font-weight: bold;
     display: inline-block;
-    padding: 1rem;
+    padding: 0.5rem;
     text-decoration: none;
     border-width: 2px;
-    border-style: solid;
-    margin: 0.5rem;
+    border-style: solid;  
+}
+
+.transparent-button:hover{
+    background-color: #e6bd43;;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0.5rem;
+    text-decoration: none;
+    border-width: 2px;
+    border-style: solid;  
 }
