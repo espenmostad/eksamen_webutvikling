@@ -11,7 +11,7 @@
         <title>MyCompany - main</title>
     </head>
     <body>
-        
+        <div id="grid_container">
             <header>
                 <nav>
                     
@@ -29,11 +29,14 @@
         
             <main>
                 <section class="standard_section" id="main_article">
+
+                  
+
                     <h1>Compeling headline</h1>
                     
                         
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce urna augue, luctus vel dictum ut, viverra vel enim. Aliquam erat volutpat. Pellentesque in viverra eros. Sed a sapien congue, tempus tortor ut, luctus nisi. Etiam hendrerit facilisis velit ut ultrices.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                         </p>
                         <p>
                             <a href="#services" class="golden-button">Read more about our services</a>
@@ -50,10 +53,10 @@
                 </section>
                 <section  class="standard_section" id="about_us">
                     
-                        <img src="https://placehold.co/200x200/png?text=Picture+of+saleschart" alt="Image of a saleschart showing benefits from our services">
+                    <img src="https://placehold.co/200x200/png?text=Picture+of+saleschart" alt="Image of a saleschart showing benefits from our services">
                         <h2>About our company</h2>
                         <p>                            
-                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Fusce urna augue, luctus vel dictum ut, viverra vel enim. Aliquam erat volutpat. Pellentesque in viverra eros. Sed a sapien congue, tempus tortor ut, luctus nisi. Etiam hendrerit facilisis velit ut ultrices. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
                         <p>                            
                             <a href="about.html" class="transparent-button">Read more about us</a>
@@ -63,49 +66,53 @@
                 </section>
                 <section  class="standard_section" id="services">
                     
-                        <h2>Our services</h2>
-                        <article>
-                            <h3>Branding</h3>
-                            <p>
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                           </p>
+                    <h2>Our services</h2>
+                    <article>
+                        <i class="fa-solid fa-users"></i>
+                        <h3>Branding</h3>
+                        <p>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                       </p>
 
-                        </article>
+                    </article>
 
-                        <article>
-                            <h3>Design</h3>
-                            <p>
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                           </p>
-                        </article>
+                    <article>
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <h3>Branding</h3>
+                        <p>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                       </p>
+                    </article>
 
-                        <article>
-                            <h3>Development</h3>
-                            <p>
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                           </p>
-                        </article>
-                    
-                        <article>
-                            <h3>Support</h3>
-                            <p>
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                           </p>
-                        </article>
+                    <article>
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Branding</h3>
+                        <p>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                       </p>
+                    </article>
+                
+                    <article>
+                        <i class="fa-solid fa-wifi"></i>
+                        <h3>Branding</h3>
+                        <p>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                       </p>
+                    </article>
                         
                     
                 </section>
                 <section class="standard_section" id="newsletter">
                     
                         <h2>Sign up for our newsletter</h2>
-                        
+                        <div id="form_holder">
                             <form method="post" action="#">
-                                <input type="email" name="email" id="email" required>
-                                <input type="submit"  class="golden-button" value="Logg inn">
+                                <input type="email" name="email" id="newsletter_email" placeholder="email@domain.com" required>
+                                <input type="submit"  id="newsletter_button" class="golden-button" value="Logg inn">
                                
                             </form>
                            
-                        
+                        </div>
                     
                 </section>
             </main>
@@ -122,6 +129,6 @@
                     <li><a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a></li>
                 </ul>
             </footer>
-       
+        </div>
     </body>
 </html>

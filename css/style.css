@@ -1,19 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300&display=swap');
 
 * {
     box-sizing: border-box;
 }
 html {
     font-size: calc(1em + 1vw);
+    justify-self: center;
 }
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 15px;
+    font-family: 'Barlow', Arial, Helvetica, sans-serif;
+    margin: auto;
+    padding: 5px;
     background-color: #fff;
     max-width: 1600px;
+}
+#grid_container {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
 }
 
 
 header {
+    grid-area: header;
     padding: 20px 30px 20px 30px;
 }
 
@@ -21,17 +29,22 @@ nav{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
+    
+    
 }
 
 nav ul {
+
+    /*
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    */
 }
 
 nav ul li {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
 }
 
 nav ul li a {
@@ -49,17 +62,21 @@ nav ul li a {
 
 .menu {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
     list-style: none;
     margin: 0;
 }
 
+main {
+    grid-area: main;
+}
+
 .standard_section {
-    width: 100%;
-    
-    
+    width: 100%;  
 }
 
 .standard_section h1 {
@@ -87,10 +104,10 @@ nav ul li a {
 }
 
 
+
 #main_article{    
-    background-color: lightgrey;
-    padding: 50px;
-    
+    background-color: lightgrey;    
+    padding: 50px;    
 }
 
 #main_article h1{
@@ -114,8 +131,11 @@ nav ul li a {
 }
 
 #about_us{
-    border: solid;
-    border-width: 1px;       
+    width: 100%;
+    height: 500 px;
+    background-color: #e6bb43; 
+    display: flow-root;
+
 }
 
 #about_us h2{
@@ -128,7 +148,7 @@ nav ul li a {
 
 #about_us img{
     float: left;
-    margin: 0px 20px 20px 0px;
+    margin: 20px;
 }
 
 #services {
@@ -151,13 +171,33 @@ nav ul li a {
 
 #newsletter {
     background-color: lightgrey;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items:center;
 }
 
 #newsletter h2 {
     text-align: center;
+    flex-basis: 100%;
 }
 
+#newsletter form  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#newsletter form input {
+    height: 35px;
+    font-size: 0.5rem;
+}
+
+
 #about_company{
+    width: 100%;
     background-image:url("../img/desktop.png");
     background-size: cover; 
     padding: 30px 30px 30px 30px;
@@ -195,6 +235,7 @@ nav ul li a {
 }
 #contact_us_section {
     background-color:rgb(237, 234, 234);
+    padding: 20px 20px 20px 20px;
 }
 
 #contact_us_section h2{
@@ -208,10 +249,22 @@ nav ul li a {
 }
 
 #form_div {
-    
+    display: flex;
+    flex-wrap: wrap;
     width: 40%;
     font-size: 0.5rem;
 }
+
+#form_div input {
+    width: 100%;
+}
+
+#form_div textarea {
+    width: 100%;
+}
+#form_div input[type=submit]{
+    width: 50%;
+} 
 
 
 #contact_info {
@@ -240,10 +293,7 @@ nav ul li a {
 }
 
 #explore {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+
     justify-content: space-between;
     padding: 30px;
 }
@@ -255,11 +305,11 @@ nav ul li a {
 #explore ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
 }
 
-#explore ul li a {
+#explore ul li a{
     text-decoration: none;
+    color: black;
 }
 
 #branding {
@@ -267,15 +317,7 @@ nav ul li a {
     
 }
 
-#branding h2 {
-    /*
-    flex-basis: 100%;
-    */
-}
 
-#branding article {
-    
-}
 
 .flexgrow_article {
     display: flex;
@@ -308,6 +350,7 @@ nav ul li a {
 
 
 footer {
+    grid-area: footer;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -316,12 +359,14 @@ footer {
     color: white;
     font-size: 0.5rem;
     padding: 20px 30px 20px 30px;
+    text-align: center;
 }
 
 
 footer ul li i {
     font-size: 1.5rem;
     color: white;
+    text-align: center;
 }
 
 .some-icons {
